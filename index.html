@@ -5,10 +5,25 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="/nccs-visual/stylesheet.css"></style>
   </head>
-  <body>
-
+  <body id="bg">
   <div id="container"></div>
-  <div id="title-bg"></div>
+
+  <div id="title-bg">
+    <div id="title">Global Climate Visualization</div>
+    <a href="http://nasa.gov">
+      <img src="/nccs-visual/nasa_logo.png" alt="NASA" id="logo">
+    </a>
+    <div id="date-label">Go to date:</div>
+    <div id="date-select">October 28, 2012</div>
+  </div>
+
+  <div id="timeline-bg">
+
+  </div>
+
+  <div id="marker-bg">
+    <span id="marker">January 1st, 2005 | 00:00 EST</span>
+  </div>
 
   <div id="info">
     <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Based on code by the Google Data Arts Team <span class="bull">&bull;</span> Data acquired from <a href="http://gmao.gsfc.nasa.gov/">GMAO NASA</a>
@@ -30,10 +45,9 @@
       console.log(globe);    
       TWEEN.start();
            
-      globe.createPoints();
       new TWEEN.Tween(globe).to(0,500).easing(TWEEN.Easing.Cubic.EaseOut).start();
       globe.animate();
-      document.body.style.backgroundImage = 'none'; // remove loading
+      //document.body.style.backgroundImage = 'none'; // remove loading
     }
 
   </script>
