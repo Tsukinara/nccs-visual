@@ -36,6 +36,16 @@ body {
   padding: 10px;
 }
 
+#title-bg {
+  width: 580px;
+  position: absolute;
+  left: 33px;
+  top: 30px;
+
+  background-color: rgba(26,26,26,0.85);
+  border-radius: 12px;
+}
+
 a {
   color: #aaa;
   text-decoration: none;
